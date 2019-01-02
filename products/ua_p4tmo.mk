@@ -17,16 +17,22 @@ $(call inherit-product, vendor/unlegacy/configs/common.mk)
 
 # Inherit AOSP device configuration
 #$(call inherit-product, device/samsung/p4/aosp_espresso.mk)
-$(call inherit-product, device/samsung/p4tmo/BoardConfig.mk)
+#$(call inherit-product, device/samsung/p4tmo/BoardConfig.mk)
+
+$(call inherit-product, device/samsung/p4-common/p4-common.mk)
+$(call inherit-product, device/samsung/p4tmo/device.mk)
+$(call inherit-product-if-exists, vendor/samsung/p4tmo/p4tmo-vendor.mk)
+
+$(call inherit-product-if-exists, build/target/product/telephony.mk)
 
 PRODUCT_NAME   := ua_p4tmo
 PRODUCT_DEVICE := p4tmo
-PRODUCT_BRAND  := samsung
-PRODUCT_MODEL  := Galaxy Tab 10.1N (T-Mobile)
+PRODUCT_BRAND  := Samsung
+PRODUCT_MODEL  := SGH-T859
 PRODUCT_MANUFACTURER := Samsung
 
 # Device build info and fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=p4 \
+    PRODUCT_NAME=p4tmo \
     BUILD_FINGERPRINT="samsung/espresso10wifixx/espresso10wifi:4.2.2/JDQ39/P5110XXDML1:user/release-keys" \
     PRIVATE_BUILD_DESC="espresso10wifixx-user 4.2.2 JDQ39 P5110XXDML1 release-keys"
