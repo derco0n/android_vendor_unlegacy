@@ -17,11 +17,11 @@ $(call inherit-product, vendor/unlegacy/configs/common.mk)
 
 # Inherit AOSP device configuration
 #$(call inherit-product, device/samsung/p4/aosp_espresso.mk)
-#$(call inherit-product, device/samsung/p4tmo/BoardConfig.mk)
+$(call inherit-product, device/samsung/p4tmo/BoardConfig.mk)
 
-$(call inherit-product, device/samsung/p4-common/p4-common.mk)
-$(call inherit-product, device/samsung/p4tmo/device.mk)
-$(call inherit-product-if-exists, vendor/samsung/p4tmo/p4tmo-vendor.mk)
+#$(call inherit-product, device/samsung/p4-common/p4-common.mk)
+#$(call inherit-product, device/samsung/p4tmo/device.mk)
+#$(call inherit-product-if-exists, vendor/samsung/p4tmo/p4tmo-vendor.mk)
 
 $(call inherit-product-if-exists, build/target/product/telephony.mk)
 
