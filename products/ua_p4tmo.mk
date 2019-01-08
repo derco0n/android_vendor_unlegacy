@@ -25,7 +25,7 @@ $(call inherit-product-if-exists, vendor/samsung/p4tmo/p4tmo-vendor.mk)
 
 $(call inherit-product-if-exists, build/target/product/telephony.mk)
 
-PRODUCT_NAME   := ua_p4tmox
+PRODUCT_NAME   := ua_p4tmo
 PRODUCT_DEVICE := p4tmo
 PRODUCT_BRAND  := Samsung
 PRODUCT_MODEL  := SGH-T859
