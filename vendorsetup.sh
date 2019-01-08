@@ -21,5 +21,5 @@ add_lunch_combo ua_picasso2-userdebug
 add_lunch_combo ua_tilapia-userdebug
 add_lunch_combo ua_transformer-userdebug
 add_lunch_combo ua_tuna-userdebug
-add_lunch_combo ua_p4-userdebug
+#add_lunch_combo ua_p4-userdebug
 add_lunch_combo ua_p4tmo-userdebug
