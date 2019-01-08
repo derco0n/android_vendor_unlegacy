@@ -26,7 +26,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/products/ua_hammerhead.mk \
     $(LOCAL_DIR)/products/ua_mako.mk \
     $(LOCAL_DIR)/products/ua_ovation.mk \
-    $(LOCAL_DIR)/products/ua_p4.mk \
     $(LOCAL_DIR)/products/ua_p4tmo.mk \
     $(LOCAL_DIR)/products/ua_picasso2.mk \
     $(LOCAL_DIR)/products/ua_tilapia.mk \
